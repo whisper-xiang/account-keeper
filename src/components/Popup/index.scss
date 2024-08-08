@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+$spacing-unit: 4px;
+$font-weight-unit: 100;
+$font-size-unit: 1px;
+
+@for $i from 1 through 10 {
+  .ml-#{$i} {
+    margin-left: $i * $spacing-unit;
+  }
+  .mr-#{$i} {
+    margin-right: $i * $spacing-unit;
+  }
+  .mt-#{$i} {
+    margin-top: $i * $spacing-unit;
+  }
+  .mb-#{$i} {
+    margin-bottom: $i * $spacing-unit;
+  }
+  .fw-#{$i * $font-weight-unit} {
+    font-weight: $i * $font-weight-unit;
+  }
+  .pl-#{$i} {
+    margin-left: $i * $spacing-unit;
+  }
+  .pr-#{$i} {
+    margin-right: $i * $spacing-unit;
+  }
+  .pt-#{$i} {
+    margin-top: $i * $spacing-unit;
+  }
+  .pb-#{$i} {
+    margin-bottom: $i * $spacing-unit;
+  }
+}
+
+@for $i from 1 through 20 {
+  .ft-#{$i} {
+    font-size: $i * $font-size-unit;
+  }
+}
+.d-flex {
+  display: flex;
+}
+.f-d-column {
+  flex-direction: column;
+}
+.j-c-between {
+  justify-content: space-between;
+}
+.j-c-end {
+  justify-content: flex-end;
+}
+.a-i-center {
+  align-items: center;
+}
+.j-c-start {
+  justify-content: flex-start;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.f-d-end {
+  flex-direction: row-reverse;
+}
+.o-auto {
+  overflow: auto;
+}
+.t-center {
+  text-align: center;
+}
+.t-left {
+  text-align: left;
+}
+.t-right {
+  text-align: right;
+}
+.flex-1 {
+  flex: 1;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.d-block {
+  display: block;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
